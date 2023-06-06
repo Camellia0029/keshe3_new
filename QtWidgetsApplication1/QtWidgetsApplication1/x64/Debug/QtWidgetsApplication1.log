@@ -1,2 +1,5 @@
-﻿  .shapeAnalyzer.cpp
+﻿  moc mainwindow.h
+  main.cpp
+  mainwindow.cpp
+  moc_mainwindow.cpp
   QtWidgetsApplication1.vcxproj -> D:\QtWidgetsApplication\QtWidgetsApplication1\x64\Debug\QtWidgetsApplication1.exe

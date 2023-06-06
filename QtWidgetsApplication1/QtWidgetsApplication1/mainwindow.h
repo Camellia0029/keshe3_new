@@ -2,10 +2,11 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 #include <QMainWindow>
-
-class ShapeAnalyzer;
-class Shape;
-class Command;
+#include<qmenubar.h>
+#pragma execution_character_set("utf-8")
+class ShapeAnalyzer;//几何分析
+class Shape;//几何
+class Command;//命令
 
 namespace Ui {
     class MainWindow;

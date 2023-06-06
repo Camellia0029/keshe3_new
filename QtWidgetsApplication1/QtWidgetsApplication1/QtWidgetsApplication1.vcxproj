@@ -55,6 +55,8 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <LibraryPath>D:\QtWidgetsApplication\QtWidgetsApplication1;$(LibraryPath)</LibraryPath>
+    <IncludePath>D:\QtWidgetsApplication\QtWidgetsApplication1\triangle;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
   </PropertyGroup>
@@ -83,7 +85,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include=".shapeAnalyzer.cpp">
+    <ClCompile Include="shapeAnalyzer.cpp">
       <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">input</DynamicSource>
       <QtMocFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(Filename).moc</QtMocFileName>
       <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">input</DynamicSource>
@@ -101,6 +103,9 @@
     <QtMoc Include="command.h" />
     <QtMoc Include="shape.h" />
     <QtMoc Include="shapeAnalyzer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\triangle.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">

@@ -3,6 +3,7 @@
 #define COMMAND_H
 #include <QObject>
 #include <algorithm>
+
 //用于基类声明和命令类声明
 class Command : public QObject
 {
@@ -46,11 +47,24 @@ public:
     void execute() override;
 };
 
-class VoronoiCommand : public Command
+class PerimeterCommand : public Command
 {
 public:
-    explicit VoronoiCommand(QObject* parent = nullptr);
+    explicit PerimeterCommand(QObject* parent = nullptr);
     void execute() override;
 };
 
+class AreaCommand : public Command
+{
+public:
+    explicit AreaCommand(QObject* parent = nullptr);
+    void execute() override;
+};
+
+class CountCommand : public Command
+{
+public:
+    explicit CountCommand(QObject* parent = nullptr);
+    void execute() override;
+};
 #endif // COMMAND_H

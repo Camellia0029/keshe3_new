@@ -46,7 +46,7 @@
     <ClCompile Include="command.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include=".shapeAnalyzer.cpp">
+    <ClCompile Include="shapeAnalyzer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -54,11 +54,16 @@
     <QtMoc Include="shapeAnalyzer.h">
       <Filter>Header Files</Filter>
     </QtMoc>
-    <QtMoc Include="command.h">
-      <Filter>Header Files</Filter>
-    </QtMoc>
     <QtMoc Include="shape.h">
       <Filter>Header Files</Filter>
     </QtMoc>
+    <QtMoc Include="command.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\triangle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
